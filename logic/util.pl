@@ -1,5 +1,5 @@
 date1(1,5,2020).
-% время для расчета: 4 мая 2020
+% время для расчета: 1 мая 2020
 
 tierpoint(1, 400).
 tierpoint(2, 200).
@@ -11,20 +11,6 @@ placerate(1, 1).
 placerate(2, 0.6).
 placerate(3, 0.3).
 placerate(4, 0.3).
-
-month(1, 31).
-month(2, 28).
-month(3, 31).
-month(4, 30).
-month(5, 31).
-month(6, 30).
-month(7, 31).
-month(8, 31).
-month(9, 30).
-month(10, 31).
-month(11, 30).
-month(12, 31).
-
 
 
 convertToText([A | _], R):-
@@ -158,13 +144,6 @@ showteams([[H, H1, H2, H3, H4 | _] | T]):-
     write(H4),
     nl,
     showteams(T).
-
-
-
-
-
-
-
 
 
 showallachives1:-

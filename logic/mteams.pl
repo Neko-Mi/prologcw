@@ -41,14 +41,9 @@ findmteams(_):-
 
 addteam:-
     teamname(N),
-    % teamr(R),
     asserta(team(N, 0, 0, 0, 999)),
     addplayersinteam(N),
     saveteam.
-
-% teamr(E):-
-%     team(_, _, _, _, X),
-%     E is X - 2.
 
 deleteteam:-
     teamname(N),
@@ -67,8 +62,6 @@ teamname(E):-
     atomic_list_concat(A, " ", R),
     checkstring(R, E),
     writeln(E).
-
-
 
 
 :-mteams.

@@ -3,28 +3,10 @@
 результаты на турнирах за последние 2 месяцa (максимум 300)
 
 
-major = 1 
-s  = 2
-minor, a = 3 
-чем выше место, тем меньше имеют значение:
-b = 4 
-c = 5 
+
+запуск для свипролога:
+swipl main.pl
 
 сборка:
-qsave_program('check2.exe', [stand_alone(true),goal(main)]).
+qsave_program('csgo.exe', [stand_alone(true),goal(main)]).
 
-
-players.pl 
-player(NickName, team, start date)
-
-achivments.pl 
-achivment(name, place, team, players1-5)
-
-matches.pl 
-match(event, team1, team2, score1, score2, date)
-
-events.pl 
-event(id, Name, tier, date start, date end, number)
-
-teams.pl 
-team(name, achivment_scor, form_score, lan_score, rank)

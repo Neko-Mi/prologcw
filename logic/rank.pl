@@ -32,9 +32,9 @@ teamrerank1:-
 
 
 allteams(T):-
-    findall(Z, teamsname(Z), T).
+    findall(Z, teamsname2(Z), T).
 
-teamsname(N):-
+teamsname2(N):-
     team(N, _, _, _, _).
 
 allscore(T):-
@@ -84,8 +84,6 @@ rerankall([[N, A, F, L] | T], I):-
 % achivment rank ------------------------------------------------------
 achivmentrank(T, Score):-
     allachivs(T, A),
-    writeln(T),
-    writeln(A),
     scoreevents(A, S),
     checkscoreachiv(S, Score).
 
@@ -99,14 +97,6 @@ checkscoreachiv(S, Score):-
     Score is 500.
 checkscoreachiv(S, S):-!.
  
-
-
-
-
-
-
-
-
 
 
 
@@ -336,43 +326,6 @@ checkdateeventyear(_, _, _, 0):-!.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 checkdateevent3(_, _, Y, R):-
     date1(_,_, X),
     X1 is X - 1,
@@ -441,10 +394,6 @@ checkdateevent3(_, _, _, 0):-!.
 
 
 
-
-
-
-
 scoreevents([], 0):- !.
 scoreevents([], _):- !.
 scoreevents([[N, R] | Tail], S):-
@@ -462,12 +411,6 @@ allachivs(T, A):-
 
 achivments1([N, P], T):-
     achivment(N, P, T, _, _, _, _, _).
-
-
-
-
-
-
 
 
 
@@ -501,27 +444,11 @@ scoreevents1([[N, R] | Tail], S):-
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 % form rank ------------------------------------------------------------
 formrank(T, Score):-
     allmatches1(T, A),
     team(T, _, _, _, TRank),
     scorematches1(A, TRank, S),
-    % writeln(S),
     checkscoreform(S, Score).
 
 checkscoreform(S, 0):-

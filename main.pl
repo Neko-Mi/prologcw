@@ -11,6 +11,7 @@ main:-
     write("5 - Teams"), nl,
     write("6 - Matches"), nl,
     write("7 - Events"), nl,
+    writeln("Rasc4eti: "),
     write("8 - Rerank teams"), nl,
     write("9 - Rerank players"), nl,
     writeln("10 - Ras4et Achivments"),

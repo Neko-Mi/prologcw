@@ -55,6 +55,4 @@ sortteamsach(L, SL):-
     moveminup23(L, SP),
     sortteamsach(SP, SL).
 
-    
-
 :-levents.

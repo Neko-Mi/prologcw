@@ -1,6 +1,5 @@
 :- dynamic event/9.
 
-event(15, "ESL Krakov 2020", 3, 2, 3, 2020, 15, 3, 2020).
 event(14, "Europe Cup 2020", 4, 15, 2, 2020, 20, 2, 2020).
 event(13, "Germany Tour 2020", 5, 1, 2, 2020, 10, 2, 2020).
 event(12, "Turkey Cup 2020", 5, 1, 1, 2020, 10, 1, 2020).

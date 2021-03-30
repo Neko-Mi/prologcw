@@ -104,23 +104,6 @@ matchscore1(T, E):-
     convertToNumber(A, E).
 
 
-% matchday(E):-
-%     event(R, N, _, D, M, _, _, _, _),
-%     readln(A),
-%     convertToNumber(A, D).
-
-% matchmonth(E):-
-%     nl,
-%     write("Vvedite mesyac: "),
-%     readln(A),
-%     convertToNumber(A, E).
-
-% matchyear(E):-
-%     nl,
-%     write("Vvedite god: "),
-%     readln(A),
-%     convertToNumber(A, E).
-
 
 eventname1(E):-
     nl,
